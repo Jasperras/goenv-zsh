@@ -9,9 +9,9 @@ _zsh_goenv_install() {
 
 _zsh_goenv_load() {
     # export PATH
-    eval "$($GOENV_HOME/libexec/goenv init -)"
     export GOENV_ROOT="$HOME/.goenv"
     export PATH="$GOENV_HOME/bin:$PATH"
+    eval "$(goenv init -)"
     export PATH="$GOROOT/bin:$PATH"
     export PATH="$PATH:$GOPATH/bin"
 }
