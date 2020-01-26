@@ -12,8 +12,6 @@ _zsh_goenv_load() {
     export GOENV_ROOT="$HOME/.goenv"
     export PATH="$GOENV_HOME/bin:$PATH"
     eval "$(goenv init -)"
-    export PATH="$GOROOT/bin:$PATH"
-    export PATH="$PATH:$GOPATH/bin"
 }
 
 # install goenv if it isnt already installed
